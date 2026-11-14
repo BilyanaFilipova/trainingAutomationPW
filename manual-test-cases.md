@@ -67,3 +67,25 @@ Expected result:
 	• A description exceeding the 2,000-character maximum is prevented or rejected.
 	• The character counter displays the correct number of characters.
 Why automate? Boundary-value testing is highly repeatable. Automation can quickly check minimum and maximum limits and detect regressions.
+
+TC04 – Validate date restrictions
+Good for automation
+Steps:
+	1. Open the New Request page.
+	2. Enter valid title and description.
+	3. Select a date within the allowed period.
+	4. Try selecting a date more than one month ago.
+	5. Try selecting a future date.
+	6. Observe the validation behavior.
+Test data:
+	• Valid date: 14-Nov-2026.
+	• Invalid old date: 01-Oct-2026.
+	• Future date: 15-Nov-2026.
+Expected result:
+	• A date within the allowed period is accepted.
+	• A date more than one month ago is rejected.
+	• A future date is rejected if the business rules prohibit future dates.
+	• Appropriate validation messages are displayed.
+Why automate? Date validation is predictable and can be checked using different date values. It is useful for regression testing.
+Note: The screenshot explicitly states that the date cannot be more than one month ago. The future-date restriction should be confirmed with the business requirements.
+
