@@ -89,3 +89,29 @@ Expected result:
 Why automate? Date validation is predictable and can be checked using different date values. It is useful for regression testing.
 Note: The screenshot explicitly states that the date cannot be more than one month ago. The future-date restriction should be confirmed with the business requirements.
 
+TC05 – Complete the wizard and submit a request
+Good for automation
+Steps:
+	1. Open the New Request page.
+	2. Complete all required fields in Basic Information.
+	3. Click Next and complete Location Details.
+	4. Complete Contact Information.
+	5. Complete Additional Details.
+	6. Proceed to Review & Submit.
+	7. Check that all entered information is correct.
+	8. Click Submit.
+Test data:
+	• Title: Broken streetlight.
+	• Description: The streetlight near the main entrance is not working.
+	• Category: Street Lighting.
+	• Priority: High.
+	• Emergency: No.
+	• Location: 123 Main Street.
+	• Contact: Valid test name, email and phone number.
+	• Additional details: Streetlight pole near the main entrance.
+Expected result:
+	• The user can complete all five steps.
+	• The review page displays the correct information.
+	• The request is successfully submitted.
+	• A confirmation message and request reference number are displayed.
+Why automate? This is an important end-to-end business process. Automation helps verify that all wizard steps work together and that submitted information is saved correctly.
