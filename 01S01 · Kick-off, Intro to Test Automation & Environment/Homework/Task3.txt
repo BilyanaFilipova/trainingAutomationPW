@@ -1,0 +1,25 @@
+Verify Priority Selection and Its Impact on the Request
+Manual testing – Not recommended for automation
+Objective: To verify whether changing the Priority level has any impact on the submitted service request.
+
+Steps:
+1. Open the New Request Wizard.
+2. Enter all required information in Step 1.
+3. Select Low priority and continue completing the wizard.
+4. Repeat the process using Medium, High and Urgent priorities.
+5. Submit each request.
+6. Check the Review & Submit page and the submitted request details.
+7. Compare the results for all four priority levels.
+Test data:
+- Priority: Low
+- Priority: Medium
+- Priority: High
+- Priority: Urgent
+Expected result:
+- The selected Priority is displayed correctly during request creation.
+- The selected value should be reflected in the submitted request details.
+- Any priority-related behavior should be consistent with the selected value.
+Why should this NOT be automated?
+- Lack of Stability: The Priority field currently does not appear to have any impact on the submitted request or other parts of the application.
+- The expected business behavior is unclear and may change following future business decisions.
+- Automating this scenario now could lead to maintaining test scripts for functionality that is not yet properly defined.

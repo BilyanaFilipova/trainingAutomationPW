@@ -1,0 +1,16 @@
+Which test cases are good candidates for automation?
+All five test cases are good candidates for automation, especially because they have repeatable steps and measurable expected results.
+Test case	Automate?	Reason
+TC01 – Valid information	Yes	Repeatable, predictable
+TC02 – Required fields	Yes	Multiple validation combinations
+TC03 – Character limits	Yes	Boundary-value testing
+TC04 – Date restrictions	Yes	Data-driven and repeatable
+TC05 – Complete wizard	Yes	Important end-to-end regression test
+Qualities of a good automation candidate
+A test is a good candidate for automation when it has these qualities:
+	1. Repeatability – It needs to be executed many times.
+	2. Predictability – It has clear and consistent expected results.
+	3. Stability – The functionality and requirements do not change frequently.
+	4. High value – It tests important business functionality.
+	5. Time efficiency – Automation saves time compared with repeated manual execution.
+	6. Measurability – The results can be clearly marked as Pass or Fail.
