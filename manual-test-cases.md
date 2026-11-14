@@ -25,3 +25,22 @@ Expected result:
 Why automate? This is a repeatable test with clear expected results. It checks important functionality and is suitable for regression testing.
 
 
+TC02 – Validate required fields
+Good for automation
+Steps:
+	1. Open the New Request page.
+	2. Leave Request Title empty.
+	3. Leave Description empty.
+	4. Do not select a Category.
+	5. Click Next.
+Test data:
+	• Title: Empty
+	• Description: Empty
+	• Date: Today's date
+	• Category: Not selected
+Expected result:
+	• The form does not proceed to Step 2.
+	• Required-field validation messages are displayed.
+	• The user remains on Step 1.
+	• No request is submitted.
+Why automate? Required-field validation is a critical function. It can be tested repeatedly with different combinations of missing fields.
