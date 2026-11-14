@@ -1,0 +1,50 @@
+NEW REQUEST FLOW – NETWORK MAP
+
+1. Open New Request
+API Call 1:
+Method: GET
+Endpoint: /api/v1/testing-flags/active
+Status Code: 200 OK
+
+2. New Request Wizard – Steps 1–5
+
+No additional API calls were observed when navigating between the wizard steps.
+
+Additional API call – Automatic polling:
+Method: GET
+Endpoint: /api/v1/testing-flags/active
+Status Code: 200 OK
+Trigger: Automatic request, approximately every 30 seconds.
+
+3.Final Step – Submit/Create New Request
+
+Action: Click Submit
+Request URL: http://localhost:3001/api/v1/requests
+Method: POST
+Status Code: 201 Created
+Result: New Request created successfully.
+
+
+4. After Request Creation – Load Requests List
+
+Request URL: http://localhost:3001/api/v1/requests?page=1&size=10&sort=id%3Adesc
+Method: GET
+Status Code: 200 OK
+Result: Requests list loaded successfully.
+The same GET request was observed twice.
+
+
+5. After Submit/Create – Additional API Calls
+
+1. GET /api/v1/testing-flags/active
+   Status Code: 200 OK
+   Observed: 2 times
+2. GET /api/v1/auth/me
+   Status Code: 200 OK
+   Observed: 2 times
+3. GET /api/v1/requests?page=1&size=10&sort=id%3Adesc
+   Status Code: 200 OK
+   Observed: 2 times
+4. POST /api/v1/requests
+   Status Code: 201 Created
+   Purpose: Creates a new request.
