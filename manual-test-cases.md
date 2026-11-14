@@ -44,3 +44,26 @@ Expected result:
 	• The user remains on Step 1.
 	• No request is submitted.
 Why automate? Required-field validation is a critical function. It can be tested repeatedly with different combinations of missing fields.
+
+
+TC03 – Validate description minimum and maximum length
+Good for automation
+Steps:
+	1. Open the New Request page.
+	2. Enter a valid title.
+	3. Enter a description with fewer than 30 characters.
+	4. Try to continue.
+	5. Enter exactly 30 characters.
+	6. Try again.
+	7. Enter more than 2,000 characters.
+	8. Check the validation behavior.
+Test data:
+	• Description 1: Streetlight broken (18 characters).
+	• Description 2: The streetlight is broken near my home. (40 characters).
+	• Description 3: 2,001 characters.
+Expected result:
+	• A description shorter than 30 characters is rejected.
+	• A description meeting the 30-character minimum is accepted.
+	• A description exceeding the 2,000-character maximum is prevented or rejected.
+	• The character counter displays the correct number of characters.
+Why automate? Boundary-value testing is highly repeatable. Automation can quickly check minimum and maximum limits and detect regressions.
