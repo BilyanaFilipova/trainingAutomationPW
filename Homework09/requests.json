@@ -1,0 +1,62 @@
+[
+  {
+    "id": 1001,
+    "title": "Broken street light",
+    "category": "Lighting",
+    "priority": 2
+  },
+  {
+    "id": 1002,
+    "title": "Damaged road",
+    "category": "Roads",
+    "priority": 1
+  },
+  {
+    "id": 1003,
+    "title": "Water leak",
+    "category": "Water",
+    "priority": 8
+  },
+  {
+    "id": 1004,
+    "title": "Broken bench",
+    "category": "Parks",
+    "priority": 4
+  },
+  {
+    "id": 1005,
+    "title": "Overflowing bin",
+    "category": "Waste",
+    "priority": 3
+  },
+  {
+    "id": 1006,
+    "title": "",
+    "category": "Roads",
+    "priority": 2
+  },
+  {
+    "id": 1007,
+    "title": "Damaged sidewalk",
+    "category": "Roads",
+    "priority": 3
+  },
+  {
+    "id": 1008,
+    "title": "Broken traffic light",
+    "category": "Traffic",
+    "priority": 1
+  },
+  {
+    "id": "ABC",
+    "title": "Fallen tree",
+    "category": "Parks",
+    "priority": 2
+  },
+  {
+    "id": 1010,
+    "title": "Graffiti removal",
+    "category": "Cleaning",
+    "priority": 5
+  }
+]
